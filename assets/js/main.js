@@ -20,3 +20,52 @@ if (menuToggle && navigation) {
     });
   });
 }
+/* ========================================
+   PORTFOLIO FILTERS
+======================================== */
+
+const filterButtons = document.querySelectorAll(".filter-button");
+const portfolioCards = document.querySelectorAll(".portfolio-card");
+const portfolioEmpty = document.querySelector(".portfolio-empty");
+
+if (filterButtons.length && portfolioCards.length) {
+
+  filterButtons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+      const selectedFilter = button.dataset.filter;
+      let visibleCount = 0;
+
+      filterButtons.forEach((item) => {
+        const isActive = item === button;
+
+        item.classList.toggle("is-active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
+      });
+
+      portfolioCards.forEach((card) => {
+
+        const category = card.dataset.category;
+
+        const shouldShow =
+          selectedFilter === "all" ||
+          selectedFilter === category;
+
+        card.hidden = !shouldShow;
+
+        if (shouldShow) {
+          visibleCount++;
+        }
+
+      });
+
+      if (portfolioEmpty) {
+        portfolioEmpty.hidden = visibleCount !== 0;
+      }
+
+    });
+
+  });
+
+}
