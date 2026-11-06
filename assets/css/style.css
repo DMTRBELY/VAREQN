@@ -237,6 +237,10 @@ h1, h2, h3, .logo {
 }
 
 .hero__bottom {
+  .hero__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
   display: flex;
   align-items: center;
   justify-content: space-between;
