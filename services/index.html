@@ -13,29 +13,32 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header" id="top">
-    <div class="container header__inner">
+  
+<!-- HEADER -->
+<header class="header" id="top">
+  <div class="container header__inner">
 
-      <a href="../" class="logo">VAREQN</a>
+    <a class="logo" href="../" aria-label="VAREQN Home">VAREQN</a>
 
-      <button class="menu-toggle"
-              aria-label="Open menu"
-              aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
+    <nav class="nav" id="main-nav" aria-label="Main navigation">
+      <a href="../portfolio/">PORTFOLIO</a>
+      <a href="../services/">SERVICES</a>
+      <a href="../about/">ABOUT</a>
+      <a href="../contact/">CONTACT</a>
+    </nav>
 
-      <nav class="nav">
-        <a href="../portfolio/">PORTFOLIO</a>
-        <a href="./" class="is-active">SERVICES</a>
-        <a href="../about/">ABOUT</a>
-        <a href="../contact/">CONTACT</a>
-        <a href="../contact/" class="nav__cta">DISCUSS A PROJECT</a>
-      </nav>
+    <a class="button button--primary header__cta" href="../contact/">
+      DISCUSS A PROJECT <span>↗</span>
+    </a>
 
-    </div>
-  </header>
+    <button class="menu-toggle" aria-label="Open menu"
+      aria-expanded="false" aria-controls="main-nav">
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
 
 
   <main>
@@ -288,24 +291,24 @@
 
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
+<footer class="footer">
+  <div class="container">
 
-      <a href="../" class="logo">VAREQN</a>
+    <div class="footer__top">
+      <a class="logo logo--large" href="../">VAREQN</a>
 
-      <div class="footer__links">
-        <a href="../portfolio/">PORTFOLIO</a>
-        <a href="./">SERVICES</a>
-        <a href="../about/">ABOUT</a>
-        <a href="../contact/">CONTACT</a>
-      </div>
-
-      <p>© 2026 VAREQN. ALL RIGHTS RESERVED.</p>
-
-      <a href="#top">BACK TO TOP ↑</a>
-
+      <a class="text-link" href="#top">
+        BACK TO TOP ↑
+      </a>
     </div>
-  </footer>
+
+    <div class="footer__bottom">
+      <p>INDEPENDENT VISUAL PRODUCTION</p>
+      <p>© 2026 VAREQN. ALL RIGHTS RESERVED.</p>
+    </div>
+
+  </div>
+</footer>
 
 </body>
 </html>
