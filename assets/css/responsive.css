@@ -145,6 +145,19 @@
 ======================================== */
 
 @media (max-width: 1024px) {
+  .social-hero {
+    padding: 100px 0 80px;
+  }
+
+  .social-hero h1 {
+    font-size: clamp(64px, 10vw, 110px);
+  }
+
+  .social-hero__bottom {
+    gap: 30px;
+    margin-top: 50px;
+  }
+
   .social-intro__grid,
   .social-approach__grid {
     gap: 40px;
