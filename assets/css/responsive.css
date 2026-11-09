@@ -110,7 +110,38 @@
 
 
 /* ========================================
-   5. MOBILE — SHARED
+   5. CREATIVE PROJECTS PAGE — TABLET
+======================================== */
+
+@media (max-width: 1024px) {
+  .creative-hero {
+    padding-top: 100px;
+  }
+
+  .creative-intro,
+  .creative-philosophy,
+  .creative-portfolio,
+  .creative-cta {
+    padding: 110px 0;
+  }
+
+  .creative-directions {
+    padding: 100px 0;
+  }
+
+  .creative-direction {
+    grid-template-columns: 50px 1fr 1fr;
+    gap: 24px;
+  }
+
+  .creative-philosophy__grid {
+    gap: 40px;
+  }
+}
+
+
+/* ========================================
+   6. MOBILE — SHARED
 ======================================== */
 
 @media (max-width: 767px) {
@@ -626,11 +657,123 @@
     gap: 16px;
     font-size: 11px;
   }
+
+
+  /* ========================================
+     CREATIVE PROJECTS PAGE
+  ======================================== */
+
+  .creative-hero {
+    padding: 80px 0 72px;
+  }
+
+  .creative-hero h1 {
+    font-size: clamp(58px, 13vw, 84px);
+  }
+
+  .creative-hero__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .creative-hero__bottom p {
+    font-size: 16px;
+  }
+
+  .creative-placeholder--hero {
+    aspect-ratio: 4 / 5;
+    min-height: 220px;
+  }
+
+  .creative-placeholder__index {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .creative-intro,
+  .creative-philosophy,
+  .creative-portfolio,
+  .creative-cta {
+    padding: 80px 0;
+  }
+
+  .creative-intro__grid,
+  .creative-philosophy__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .creative-intro h2,
+  .creative-philosophy h2,
+  .creative-portfolio h2,
+  .creative-cta h2 {
+    font-size: clamp(40px, 10vw, 60px);
+  }
+
+  .creative-directions {
+    padding: 80px 0;
+  }
+
+  .creative-directions__heading {
+    margin-bottom: 40px;
+  }
+
+  .creative-direction {
+    grid-template-columns: 35px minmax(0, 1fr);
+    gap: 16px;
+    padding: 28px 0;
+  }
+
+  .creative-direction__number {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .creative-direction__content {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  .creative-direction__content h3 {
+    font-size: 26px;
+  }
+
+  .creative-direction__content p {
+    font-size: 14px;
+  }
+
+  .creative-direction__image {
+    grid-column: 2;
+    grid-row: 2;
+    aspect-ratio: 16 / 10;
+    margin-top: 12px;
+  }
+
+  .creative-philosophy__content {
+    padding-top: 0;
+  }
+
+  .creative-philosophy__statement {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+
+  .creative-philosophy__content > p:last-child {
+    font-size: 14px;
+  }
+
+  .creative-portfolio__link,
+  .creative-cta__link {
+    gap: 16px;
+    font-size: 11px;
+  }
 }
 
 
 /* ========================================
-   6. NARROW MOBILE
+   7. NARROW MOBILE
 ======================================== */
 
 @media (max-width: 480px) {
@@ -692,11 +835,44 @@
     gap: 16px;
     font-size: 11px;
   }
+
+
+  /* CREATIVE PROJECTS PAGE */
+
+  .creative-hero h1 {
+    font-size: 56px;
+  }
+
+  .creative-hero__bottom > span {
+    font-size: 10px;
+  }
+
+  .creative-direction {
+    gap: 12px;
+    padding: 30px 0;
+  }
+
+  .creative-direction__content h3 {
+    font-size: 23px;
+  }
+
+  .creative-philosophy h2,
+  .creative-intro h2,
+  .creative-portfolio h2,
+  .creative-cta h2 {
+    font-size: 40px;
+  }
+
+  .creative-portfolio__link,
+  .creative-cta__link {
+    gap: 12px;
+    font-size: 10px;
+  }
 }
 
 
 /* ========================================
-   7. ACCESSIBILITY
+   8. ACCESSIBILITY
 ======================================== */
 
 @media (prefers-reduced-motion: reduce) {
