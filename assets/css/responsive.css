@@ -181,6 +181,62 @@
   .portfolio-card__info h2 {
     font-size: 15px;
   }
+
+
+  /* ========================================
+     PROJECT DETAIL PAGE
+  ======================================== */
+
+  .project-hero {
+    padding: 40px 0 70px;
+  }
+
+  .project-hero__top {
+    margin-bottom: 70px;
+    font-size: 10px;
+  }
+
+  .project-intro {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .project-overview,
+  .project-concept,
+  .project-gallery,
+  .project-details,
+  .next-project {
+    padding: 75px 0;
+  }
+
+  .project-overview__grid,
+  .project-concept__grid,
+  .project-details__grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .project-meta {
+    gap: 12px;
+    margin-top: 40px;
+  }
+
+  .project-meta strong {
+    font-size: 12px;
+  }
+
+  .project-gallery__grid {
+    gap: 12px;
+  }
+
+  .project-placeholder--hero {
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-placeholder--wide {
+    aspect-ratio: 4 / 3;
+    margin-top: 40px;
+  }
 }
 
 
