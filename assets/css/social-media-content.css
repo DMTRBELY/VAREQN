@@ -136,7 +136,9 @@
 .social-format__number {
   grid-column: 1;
   grid-row: 1;
-  margin: 4px 0 0;
+  align-self: start;
+  margin: 0;
+  padding-top: 7px;
   color: var(--color-muted);
   font-size: 12px;
   line-height: 1;
