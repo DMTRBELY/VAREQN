@@ -4,6 +4,56 @@
    HERO
 ========================================= */
 
+.social-hero {
+  padding: 120px 0 100px;
+}
+
+.social-hero .section-label,
+.social-intro .section-label,
+.social-formats .section-label,
+.social-approach .section-label,
+.social-portfolio .section-label,
+.social-cta .section-label {
+  margin-bottom: 32px;
+}
+
+.social-hero h1 {
+  max-width: 1200px;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(64px, 10vw, 144px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.075em;
+}
+
+.social-hero__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
+
+.social-hero__bottom p {
+  max-width: 420px;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.social-hero__bottom span {
+  color: var(--color-muted);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+/* =========================================
+   PLACEHOLDERS
+========================================= */
+
 .social-placeholder {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -20,7 +70,7 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   min-height: 250px;
-  margin-top: 64px;
+  margin-top: 0;
 }
 
 .social-placeholder__index {
@@ -33,6 +83,7 @@
 
 .social-intro {
   padding: 120px 0;
+  border-top: 1px solid var(--color-border);
 }
 
 .social-intro__grid {
@@ -60,6 +111,10 @@
 
 .social-formats__heading {
   margin-bottom: 64px;
+}
+
+.social-formats__heading h2 {
+  margin: 0;
 }
 
 .social-formats__grid {
@@ -113,6 +168,7 @@
 
 .social-approach {
   padding: 140px 0;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .social-approach__grid {
@@ -148,18 +204,36 @@
 ========================================= */
 
 .social-portfolio {
-  padding: 100px 0;
+  padding: 140px 0;
 }
 
 .social-portfolio h2 {
   margin: 32px 0;
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 6vw, 88px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
 }
 
 .social-portfolio__link,
 .social-cta__link {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 28px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-muted);
+  color: var(--color-text);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.social-portfolio__link:hover,
+.social-cta__link:hover {
+  opacity: 0.6;
 }
 
 /* =========================================
@@ -167,10 +241,16 @@
 ========================================= */
 
 .social-cta {
-  padding: 120px 0;
+  padding: 140px 0;
+  background: var(--color-surface);
   text-align: center;
 }
 
 .social-cta h2 {
   margin: 32px 0;
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 6vw, 88px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
 }
