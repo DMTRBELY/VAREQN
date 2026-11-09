@@ -1,8 +1,8 @@
-
 /* VAREQN — PORTFOLIO PAGE */
 
+
 /* ========================================
-   PORTFOLIO PAGE INTRO
+   1. PORTFOLIO PAGE INTRO
 ======================================== */
 
 .portfolio-page-intro {
@@ -45,7 +45,7 @@
 
 
 /* ========================================
-   FILTERS
+   2. FILTERS
 ======================================== */
 
 .portfolio-page-projects {
@@ -83,7 +83,7 @@
 
 
 /* ========================================
-   PROJECT GRID
+   3. PROJECT GRID
 ======================================== */
 
 .portfolio-page-grid {
@@ -153,4 +153,54 @@
   padding: 60px 0;
   color: var(--color-muted);
   text-align: center;
+}
+
+
+/* ========================================
+   4. MEDIA PLACEHOLDERS
+======================================== */
+
+.portfolio-card__visual .media-placeholder {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #292929,
+    #151515 60%,
+    #333333
+  );
+  color: #888;
+}
+
+.portfolio-card__visual .media-placeholder span {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+
+/* ========================================
+   5. CONTACT CTA
+======================================== */
+
+.contact-cta {
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-cta__title {
+  margin-top: 40px;
+  margin-bottom: 48px;
+  font-size: clamp(64px, 10vw, 136px);
+  font-weight: 700;
+  line-height: 0.88;
+  letter-spacing: -0.08em;
+}
+
+.contact-cta__title span {
+  color: var(--color-muted);
 }
