@@ -1,0 +1,146 @@
+/* VAREQN — SHARED HEADER, NAVIGATION, BUTTONS AND FOOTER */
+
+/* ========================================
+   4. HEADER
+======================================== */
+
+.header {
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header__inner {
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: auto;
+}
+
+.nav a,
+.header__cta {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.nav a {
+  transition: color 0.25s ease;
+}
+
+.nav a:hover {
+  color: var(--color-muted);
+}
+
+
+/* ========================================
+   5. BUTTONS & LINKS
+======================================== */
+
+.button {
+  min-height: var(--button-height);
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.button--primary {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+.button--primary:hover {
+  background: var(--color-muted);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.text-link span {
+  transition: transform 0.25s ease;
+}
+
+.text-link:hover span {
+  transform: translate(4px, -4px);
+}
+
+
+/* ========================================
+   6. MOBILE MENU
+======================================== */
+
+.menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 1px;
+  margin: 6px auto;
+  background: var(--color-text);
+}
+
+
+
+/* ========================================
+   14. FOOTER
+======================================== */
+
+.footer {
+  padding-top: 48px;
+  padding-bottom: 32px;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer__top,
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo--large {
+  font-size: 52px;
+}
+
+.footer__bottom {
+  margin-top: 64px;
+  color: var(--color-muted);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+
+

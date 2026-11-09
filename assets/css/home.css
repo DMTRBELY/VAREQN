@@ -1,0 +1,250 @@
+/* VAREQN — HOME PAGE */
+
+/* ========================================
+   7. HERO
+======================================== */
+
+.hero {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.hero__content {
+  padding-bottom: 48px;
+}
+
+.hero__title {
+  margin-top: 32px;
+  font-size: clamp(64px, 11vw, 144px);
+  font-weight: 700;
+  line-height: 0.82;
+  letter-spacing: -0.085em;
+}
+
+.hero__title span {
+  color: var(--color-muted);
+}
+
+.hero__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.hero__description {
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+
+/* ========================================
+   8. IMAGE PLACEHOLDERS
+======================================== */
+
+.media-placeholder {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #292929,
+    #151515 60%,
+    #333333
+  );
+  color: #888;
+}
+
+.media-placeholder span {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+/* Hero image — исправленная высота */
+
+.hero__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 250px;
+}
+
+/* Project images */
+
+.project__image {
+  aspect-ratio: 16 / 10;
+  transition: filter 0.3s ease;
+}
+
+.project--small .project__image {
+  aspect-ratio: 4 / 5;
+}
+
+/* Approach image */
+
+.approach__image {
+  aspect-ratio: 4 / 5;
+}
+
+
+/* ========================================
+   9. INTRODUCTION
+======================================== */
+
+.introduction__content {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 64px;
+  align-items: end;
+  margin-top: 48px;
+}
+
+.introduction__text {
+  max-width: 390px;
+}
+
+.introduction__text p {
+  margin-bottom: 32px;
+  color: var(--color-muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   10. PORTFOLIO
+======================================== */
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 56px;
+}
+
+.section-heading .section-title {
+  margin-top: 24px;
+}
+
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.project:hover .project__image {
+  filter: brightness(1.2);
+}
+
+.project__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.project__info h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.project__info span {
+  color: var(--color-muted);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+}
+
+
+/* ========================================
+   11. SERVICES
+======================================== */
+
+.services .section-title {
+  margin-top: 24px;
+  margin-bottom: 56px;
+}
+
+.service-item {
+  min-height: 104px;
+  display: grid;
+  grid-template-columns: 70px 1fr 40px;
+  align-items: center;
+  gap: 24px;
+  border-top: 1px solid var(--color-border);
+  transition: padding 0.25s ease;
+}
+
+.service-item:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.service-item:hover {
+  padding-left: 12px;
+}
+
+.service-item__number {
+  color: var(--color-muted);
+  font-size: 12px;
+}
+
+.service-item h3 {
+  font-size: clamp(20px, 3vw, 36px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.service-item__arrow {
+  text-align: right;
+  font-size: 22px;
+}
+
+
+/* ========================================
+   12. APPROACH
+======================================== */
+
+.approach__grid {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.approach__text {
+  max-width: 400px;
+  margin-top: 36px;
+  color: var(--color-muted);
+  line-height: 1.8;
+}
+
+
+/* ========================================
+   13. CONTACT CTA
+======================================== */
+
+.contact-cta {
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-cta__title {
+  margin-top: 40px;
+  margin-bottom: 48px;
+  font-size: clamp(64px, 10vw, 136px);
+  font-weight: 700;
+  line-height: 0.88;
+  letter-spacing: -0.08em;
+}
+
+.contact-cta__title span {
+  color: var(--color-muted);
+}
+
+
