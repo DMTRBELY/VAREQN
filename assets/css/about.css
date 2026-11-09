@@ -1,10 +1,8 @@
 /* VAREQN — ABOUT PAGE */
 
 /* =========================================
-   ABOUT PAGE
+   HERO
 ========================================= */
-
-/* HERO */
 
 .about-hero {
   padding-top: 80px;
@@ -27,15 +25,19 @@
 }
 
 .about-hero__bottom span {
-  color: #A6A6A6;
+  color: var(--color-muted);
   font-size: 11px;
   letter-spacing: 0.08em;
 }
 
+/* =========================================
+   PLACEHOLDERS
+========================================= */
+
 .about-placeholder {
-  background: #292929;
-  border: 1px solid #383838;
-  color: #A6A6A6;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-muted);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,7 +53,9 @@
   margin-top: 64px;
 }
 
-/* THE STUDIO */
+/* =========================================
+   THE STUDIO
+========================================= */
 
 .about-studio {
   padding: 140px 0;
@@ -76,11 +80,13 @@
   margin-bottom: 24px;
 }
 
-/* OUR PERSPECTIVE */
+/* =========================================
+   OUR PERSPECTIVE
+========================================= */
 
 .about-perspective {
   padding: 120px 0;
-  background: #1C1C1C;
+  background: var(--color-surface);
 }
 
 .about-perspective__heading {
@@ -107,11 +113,11 @@
   justify-content: space-between;
   min-height: 260px;
   padding-top: 24px;
-  border-top: 1px solid #383838;
+  border-top: 1px solid var(--color-border);
 }
 
 .about-principle__number {
-  color: #A6A6A6;
+  color: var(--color-muted);
   font-size: 12px;
 }
 
@@ -123,7 +129,9 @@
   max-width: 360px;
 }
 
-/* WHAT DRIVES US */
+/* =========================================
+   WHAT DRIVES US
+========================================= */
 
 .about-direction {
   padding: 140px 0;
@@ -158,7 +166,9 @@
   min-height: 200px;
 }
 
-/* CONTACT CTA */
+/* =========================================
+   CONTACT CTA
+========================================= */
 
 .about-cta {
   padding: 140px 0;
@@ -174,112 +184,3 @@
   align-items: center;
   gap: 12px;
 }
-
-/* TABLET */
-
-@media (max-width: 1024px) {
-  .about-studio__grid,
-  .about-direction__grid {
-    gap: 48px;
-  }
-
-  .about-perspective__grid {
-    gap: 24px;
-  }
-
-  .about-perspective__heading {
-    margin-bottom: 56px;
-  }
-
-  .about-studio,
-  .about-direction,
-  .about-cta {
-    padding: 100px 0;
-  }
-}
-
-/* MOBILE */
-
-@media (max-width: 767px) {
-  .about-hero {
-    padding-top: 48px;
-  }
-
-  .about-hero__bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .about-placeholder--hero {
-    margin-top: 40px;
-  }
-
-  .about-studio,
-  .about-perspective,
-  .about-direction,
-  .about-cta {
-    padding: 80px 0;
-  }
-
-  .about-studio__grid,
-  .about-direction__grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .about-studio__content h2 {
-    margin-bottom: 28px;
-  }
-
-  .about-perspective__heading {
-    display: block;
-    margin-bottom: 48px;
-  }
-
-  .about-perspective__heading h2 {
-    margin-top: 28px;
-  }
-
-  .about-perspective__grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .about-principle {
-    min-height: 180px;
-  }
-
-  .about-direction__intro h2 {
-    margin-top: 24px;
-  }
-
-  .about-direction__text {
-    margin-bottom: 32px;
-  }
-
-  .about-placeholder--direction {
-    aspect-ratio: 4 / 3;
-  }
-}
-
-/* SMALL MOBILE */
-
-@media (max-width: 480px) {
-  .about-placeholder {
-    padding: 14px;
-  }
-
-  .about-placeholder--hero {
-    min-height: 180px;
-  }
-
-  .about-placeholder--direction {
-    min-height: 160px;
-  }
-
-  .about-principle {
-    min-height: 160px;
-  }
-}
-
