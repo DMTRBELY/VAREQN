@@ -1,6 +1,8 @@
+
 /* VAREQN — PORTFOLIO PAGE */
 
-   PORTFOLIO PAGE
+/* ========================================
+   PORTFOLIO PAGE INTRO
 ======================================== */
 
 .portfolio-page-intro {
@@ -42,7 +44,9 @@
 }
 
 
-/* FILTERS */
+/* ========================================
+   FILTERS
+======================================== */
 
 .portfolio-page-projects {
   padding-bottom: var(--section-space);
@@ -78,7 +82,9 @@
 }
 
 
-/* PROJECT GRID */
+/* ========================================
+   PROJECT GRID
+======================================== */
 
 .portfolio-page-grid {
   display: grid;
@@ -148,43 +154,3 @@
   color: var(--color-muted);
   text-align: center;
 }
-
-
-/* PORTFOLIO RESPONSIVE */
-
-@media (max-width: 767px) {
-  .portfolio-page-intro {
-    padding-top: 80px;
-    padding-bottom: 56px;
-  }
-
-  .portfolio-page-title {
-    font-size: clamp(68px, 15vw, 110px);
-  }
-
-  .portfolio-page-intro__bottom {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 36px;
-  }
-
-  .portfolio-filters {
-    gap: 8px;
-  }
-
-  .filter-button {
-    padding: 10px 12px;
-    font-size: 9px;
-  }
-
-  .portfolio-page-grid {
-    grid-template-columns: 1fr;
-    row-gap: 44px;
-  }
-
-  .portfolio-card__info h2 {
-    font-size: 15px;
-  }
-}
-
